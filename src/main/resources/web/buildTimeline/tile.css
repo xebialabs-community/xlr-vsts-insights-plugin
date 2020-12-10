@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+#main, .chart-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.legend {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.legend .legend-item {
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.legend .legend-item .icon {
+    height: 20px;
+    width: 30px;
+    border-radius: 6px;
+    margin-right: 6px;
+}

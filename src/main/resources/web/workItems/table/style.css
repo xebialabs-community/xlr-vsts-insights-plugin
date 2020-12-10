@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table-container {
+    height: 100%;
+    padding: 30px 30px 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table-container .actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.table-container .actions .mdl-button {
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 50px;
+    margin: 0 10px;
+}
+
+.table-container table {
+    min-height: calc(100% - 44px);
+    min-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    white-space: normal;
+}
+
+.table-container table.last {
+    min-height: auto;
+}
+
+.table-container table thead th {
+    text-align: left;
+}
+
+.table-container table thead th:first-of-type {
+    max-width: 60px;
+    width: 60px;
+}
+
+.table-container table thead th:nth-of-type(4)  {
+    min-width: 130px;
+    width: 160px;
+}
+
+.table-container table thead th:nth-of-type(2)  {
+    min-width: 160px;
+}
+
+.table-container table thead th:nth-of-type(3) {
+    min-width: 120px;
+}
+
+.table-container table tbody td * {
+    font-size: 12px;
+}
+
+.table-container table tbody td {
+    max-height: 250px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.table-container table tbody td:first-of-type {
+    text-align: right;
+}
